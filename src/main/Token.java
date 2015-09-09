@@ -17,6 +17,6 @@ public abstract class Token {
     public boolean isIdentifier() { return false; }
     public boolean isNumber() { return false; }
     public boolean isString() { return false; }
-    public int getNumber() { throw new RuntimeException("not number token"); }
+    public int getNumber() { throw new SandException("not number token"); }
     public String getText() { return  ""; }
 }
